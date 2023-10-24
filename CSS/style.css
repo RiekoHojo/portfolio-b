@@ -1,7 +1,7 @@
 @charset "UTF-8"
 
 /*ベース*/
-#art-main-holder {
+.art-main-holder {
   position: relative;
   right: 0;
 }  
@@ -73,6 +73,47 @@ header.art-header-one {
     }
   }
 }
+
+/*モバイルメニュー*/
+body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navigation-wrapper {
+  padding: 45px 10px;
+}
+
+.art-mobile-menu-wrapper {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1098;
+}
+
+.art-sidebar-overlay.art-mobile-menu-icon {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1099;
+  cursor: pointer;
+}
+
+.art-mobile-menu-navigation-wrapper {
+  width: 280px;
+  padding: 15px 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1800;
+  background: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 /*メイン*/
 .elementor {
   -webkit-hyphens: manual;
@@ -94,4 +135,10 @@ header.art-header-one {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none
+}
+
+@media (max-width: 767px) {
+  header.art-header-one .art-header-one-content {
+    padding: 0 22px;
+  }
 }
