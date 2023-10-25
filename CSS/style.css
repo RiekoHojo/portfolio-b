@@ -1,6 +1,28 @@
 @charset "UTF-8"
 
 /*ベース*/
+body,
+h2,
+p {
+  font-family: 'Zen Old Mincho', serif;
+}
+
+h1 {
+  font-family: 'Murecho', sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .art-main-holder {
   position: relative;
   right: 0;
@@ -115,10 +137,77 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 }
 
 /*メイン*/
-.elementor {
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual
+.elementor a {
+  box-shadow: none;
+}
+
+.elementor hr {
+  margin: 0;
+  background-color: transparent;
+}
+
+.elementor img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.elementor-section {
+  position: relative;
+}
+
+.elementor-section .elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+}
+
+.elementor-colum {
+  min-height: 1px;
+}
+
+.elementor-colum .elementor-colum-wrap {
+  position: relative;
+  display: flex;
+}
+
+.elementor-colum-wrap {
+  width: 100%;
+}
+
+.elementor-column-gap-narrow>.elementor-column>.elementor-element-populated {
+  padding: 5px
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+  padding: 10px
+}
+
+.elementor-column-gap-extended>.elementor-column>.elementor-element-populated {
+  padding: 15px
+}
+
+.elementor-column-gap-wide>.elementor-column>.elementor-element-populated {
+  padding: 20px
+}
+
+.elementor-column-gap-wider>.elementor-column>.elementor-element-populated {
+  padding: 30px
+}
+
+.elementor-inner-section .elementor-column-gap-no .elementor-element-populated {
+  padding: 0
+}
+
+.elementor-widget-wrap {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.elementor-widget-wrap>.elementor-element {
+  width: 100%;
 }
 
 .elementor a {
@@ -135,6 +224,14 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none
+}
+
+.elementor-align-center {
+  text-align: center;
+}
+
+.elementor-align-center .elementor-button {
+  width: auto;
 }
 
 @media (max-width: 767px) {
