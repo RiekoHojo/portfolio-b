@@ -234,6 +234,40 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   width: auto;
 }
 
+.elementor-02121 .elementor-element.elementor-element-0121a03 .elementor-spacer-inner {
+  height: 156px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0321a03 .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0421d03 {
+  text-align: center;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0521e03 .elementor-spacer-inner {
+  height: 77px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b1 .elementor-spacer-inner {
+  height: 70px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b2 {
+  text-align: center;
+  color: #000000;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: 7.2px;
+}
+
+
 @media (max-width: 767px) {
   header.art-header-one .art-header-one-content {
     padding: 0 22px;
