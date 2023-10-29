@@ -64,9 +64,9 @@ header.art-header-one {
             ul.menu {
               > li {
                 > a {
-                  color: #000000;
+                  color: #0f1111;
                   &:hover {
-                    border-bottom: 1px solid #000000;
+                    border-bottom: 1px solid #0f1111;
                     opacity: 1;
                   }
                 }
@@ -234,6 +234,7 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   width: auto;
 }
 
+/*sectionbox*/
 .elementor-02121 .elementor-element.elementor-element-0121a03 .elementor-spacer-inner {
   height: 156px;
 }
@@ -244,7 +245,7 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 
 .elementor-02121 .elementor-element.elementor-element-0421d03 {
   text-align: center;
-  color: #000000;
+  color: #0f1111;
   font-size: 12px;
   font-weight: 400;
   line-height: 37px;
@@ -261,12 +262,340 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 
 .elementor-02121 .elementor-element.elementor-element-0621f03b2 {
   text-align: center;
-  color: #000000;
+  color: #0f1111;
   font-size: 31px;
   font-weight: 400;
   letter-spacing: 7.2px;
 }
 
+.elementor-02121 .elementor-element.elementor-element-0621f03b3 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b4 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b5 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b6 .elementor-button .elementor-align-icon-right {
+  margin-left: 0px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b6 .elementor-button .elementor-align-icon-left {
+  margin-right: 0px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b6 .elementor-button {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0621f03b7 .elementor-spacer-inner {
+  height: 99px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0721g03.elementor-spacer-inner {
+  height: 77px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b1 .elementor-spacer-inner {
+  height: 32px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b2 {
+  text-align: center;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b3 .elementor-spacer-inner {
+  height: 10px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b4 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b5 .elementor-spacer-inner {
+  height: 10px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0821h03b6 .elementor-button {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0921i03 .elementor-spacer-inner {
+  height: 77px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1021j03b1 .elementor-spacer-inner {
+  height: 70px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1021j03b2 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: 7.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-0ddb4d6 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1021j03b4 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 3.5px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1021j03b5 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1021j03b6 .elementor-button {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+  background-color: #0f1111;
+}
+
+.elementor02121 .elementor-element.elementor-element-1021j03b7 .elementor-spacer-inner {
+  height: 70px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1121k03 .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b1 .elementor-spacer-inner {
+  height: 85px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b2 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: 7.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b3 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b4 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 3.5px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b5 .elementor-spacer-inner {
+  height: 30px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b6 .elementor-button {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1221l03b7 .elementor-spacer-inner {
+  height: 85px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1321m03 .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03a {
+  text-align: center;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b1 .elementor-spacer-inner {
+  height: 10px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b2 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b3 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b4 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b5 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1421n03b6 {
+  text-align: center;
+  color: #0f1111;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 4.2px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1521o03a .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1521o03b .elementor-button {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.1px;
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1621p03 .elementor-spacer-inner {
+  height: 100px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a .elementor-icon-wrapper {
+  text-align: center;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a.elementor-view-stacked .elementor-icon {
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-6a7f10c.elementor-view-default .elementor-icon {
+  color: #0f1111;
+  border-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-6a7f10c.elementor-view-default .elementor-icon svg {
+  fill: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a .elementor-icon {
+  font-size: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03a .elementor-icon i, .elementor-3560 .elementor-element.elementor-element-6a7f10c .elementor-icon svg {
+  transform: rotate(0deg);
+}
+
+.elementor-02121 .elementor-element.elementor-element-1721q03b {
+  text-align: center;
+  color: #0f1111;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1821r03 .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a .elementor-icon-wrapper {
+  text-align: center;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a.elementor-view-stacked .elementor-icon {
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-d0d4144.elementor-view-default .elementor-icon {
+  color: #0f1111;
+  border-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-d0d4144.elementor-view-default .elementor-icon svg {
+  fill: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a .elementor-icon {
+  font-size: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03a .elementor-icon i, .elementor-3560 .elementor-element.elementor-element-d0d4144 .elementor-icon svg {
+  transform: rotate(0deg);
+}
+
+.elementor-02121 .elementor-element.elementor-element-1921s03b {
+  text-align: center;
+  color: #0f1111;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2021t03 .elementor-spacer-inner {
+  height: 50px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03 .elementor-icon-wrapper {
+  text-align: center;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03.elementor-view-stacked .elementor-icon {
+  background-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-5339d56.elementor-view-default .elementor-icon {
+  color: #0f1111;
+  border-color: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03.elementor-view-framed .elementor-icon, .elementor-3560 .elementor-element.elementor-element-5339d56.elementor-view-default .elementor-icon svg {
+  fill: #0f1111;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03 .elementor-icon {
+  font-size: 51px;
+}
+
+.elementor-02121 .elementor-element.elementor-element-2121u03 .elementor-icon i, .elementor-3560 .elementor-element.elementor-element-5339d56 .elementor-icon svg {
+  transform: rotate(0deg);
+}
 
 @media (max-width: 767px) {
   header.art-header-one .art-header-one-content {
