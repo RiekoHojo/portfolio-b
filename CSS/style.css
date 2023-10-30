@@ -26,7 +26,8 @@ a {
 .art-main-holder {
   position: relative;
   right: 0;
-}  
+} 
+
 
 /*ヘッダー　　明日確認*/
 header.art-header-one {
@@ -158,25 +159,45 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   position: relative;
 }
 
-.elementor-section .elementor-section-boxed > .elementor-container {
-  max-width: 1140px;
+.elementor-section .elementor-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.elementor-colum {
+.elementor-section .elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+  align-items: flex-start;
+}
+
+.elementor-widget-wrap {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start
+}
+
+.elementor-widget-wrap>.elementor-element {
+  width: 100%;
+}
+
+.elementor-widget {
+  position: relative;
+}
+
+.elementor-column {
   min-height: 1px;
 }
 
-.elementor-colum .elementor-colum-wrap {
+.elementor-column .elementor-column-wrap {
   position: relative;
   display: flex;
 }
 
-.elementor-colum-wrap {
+.elementor-column-wrap {
   width: 100%;
-}
-
-.elementor-column-gap-narrow>.elementor-column>.elementor-element-populated {
-  padding: 5px
 }
 
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
@@ -197,17 +218,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 
 .elementor-inner-section .elementor-column-gap-no .elementor-element-populated {
   padding: 0
-}
-
-.elementor-widget-wrap {
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.elementor-widget-wrap>.elementor-element {
-  width: 100%;
 }
 
 .elementor a {
@@ -233,6 +243,11 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 .elementor-align-center .elementor-button {
   width: auto;
 }
+
+.elementor-column.elementor-col-50,.elementor-column[data-col] {
+  width: 50%;
+}
+
 
 /*sectionbox*/
 .elementor-02121 .elementor-element.elementor-element-0121a03 .elementor-spacer-inner {
@@ -298,6 +313,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-weight: 500;
   letter-spacing: 3.2px;
   background-color: #0f1111;
+  padding: 19px 30px 19px 30px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-0621f03b7 .elementor-spacer-inner {
@@ -338,6 +356,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-weight: 500;
   letter-spacing: 3.1px;
   background-color: #0f1111;
+  padding: 19px 30px 19px 30px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-0921i03 .elementor-spacer-inner {
@@ -378,6 +399,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-weight: 500;
   letter-spacing: 3.1px;
   background-color: #0f1111;
+  padding: 19px 30px 19px 30px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .elementor02121 .elementor-element.elementor-element-1021j03b7 .elementor-spacer-inner {
@@ -422,6 +446,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-weight: 500;
   letter-spacing: 3.1px;
   background-color: #0f1111;
+  padding: 19px 30px 19px 30px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-1221l03b7 .elementor-spacer-inner {
@@ -494,6 +521,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-weight: 500;
   letter-spacing: 3.1px;
   background-color: #0f1111;
+  padding: 19px 30px 19px 30px;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-1621p03 .elementor-spacer-inner {
@@ -597,8 +627,31 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   transform: rotate(0deg);
 }
 
+/*アイコン*/
+.elementor-icon {
+  display: inline-block;
+  line-height: 1;
+  font-size: 50px;
+  text-align: center;
+}
+.elementor-icon i,.elementor-icon svg {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+}
+
 @media (max-width: 767px) {
   header.art-header-one .art-header-one-content {
     padding: 0 22px;
   }
+
+  .elementor-column.elementor-col-50,.elementor-column[data-col="50"] {
+    width: 50%;
+  }
+
+  .elementor-column.elementor-col-100,.elementor-column[data-col="50"] {
+    width: 100%;
+  }
+
 }
