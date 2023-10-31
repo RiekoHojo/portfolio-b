@@ -1,6 +1,30 @@
 @charset "UTF-8"
 
 /*ベース*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body,
 h2,
 p {
@@ -112,7 +136,7 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   z-index: 1098;
 }
 
-.art-sidebar-overlay.art-mobile-menu-icon {
+.art-mobile-menu-wrapper .art-sidebar-overlay.art-mobile-menu-icon {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -122,7 +146,7 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   cursor: pointer;
 }
 
-.art-mobile-menu-navigation-wrapper {
+.art-mobile-menu-wrapper .art-mobile-menu-navigation-wrapper {
   width: 280px;
   padding: 15px 10px;
   position: fixed;
@@ -130,6 +154,22 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   top: 0;
   z-index: 1800;
   background: #fff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.art-mobile-menu-navigation-wrapper {
+  position: fixed;
+  z-index: 1800;
+  right: 0;
+  top: 0;
+  width: 280px;
+  background: #fff;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -176,7 +216,7 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   position: relative;
   width: 100%;
   flex-wrap: wrap;
-  align-content: flex-start
+  align-content: flex-start;
 }
 
 .elementor-widget-wrap>.elementor-element {
@@ -242,6 +282,29 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 
 .elementor-align-center .elementor-button {
   width: auto;
+}
+
+.elementor-button {
+  display: inline-block;
+  line-height: 1;
+  background-color: #818a91;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+}
+
+.elementor-button-text {
+  flex-grow: 1;
+  display: inline-block;
+}
+
+.elementor-button.elementor-size-md {
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 4px
 }
 
 .elementor-column.elementor-col-50,.elementor-column[data-col] {
@@ -312,10 +375,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 3.2px;
-  background-color: #0f1111;
-  padding: 19px 30px 19px 30px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-0621f03b7 .elementor-spacer-inner {
@@ -355,10 +414,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 3.1px;
-  background-color: #0f1111;
-  padding: 19px 30px 19px 30px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-0921i03 .elementor-spacer-inner {
@@ -398,10 +453,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 3.1px;
-  background-color: #0f1111;
-  padding: 19px 30px 19px 30px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .elementor02121 .elementor-element.elementor-element-1021j03b7 .elementor-spacer-inner {
@@ -445,10 +496,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 3.1px;
-  background-color: #0f1111;
-  padding: 19px 30px 19px 30px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-1221l03b7 .elementor-spacer-inner {
@@ -520,10 +567,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 3.1px;
-  background-color: #0f1111;
-  padding: 19px 30px 19px 30px;
-  color: #fff;
-  border-radius: 5px;
 }
 
 .elementor-02121 .elementor-element.elementor-element-1621p03 .elementor-spacer-inner {
