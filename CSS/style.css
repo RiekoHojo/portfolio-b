@@ -57,34 +57,32 @@ a {
 header.art-header-one {
   position: relative;
   z-index: 50;
+}
 
-  &.art-menu-open {
-    .art-header-one-content {
-      .art-navigation-container {
-        left: -275px;
-      }
-    }
-  }
+header.art-header-one-content {
+  left: -275px;
+}
 
-  &.art-dark-header-text {
-    .art-header-one-content {
-      .art-navigation-container {
-        .left-content {
-          .art--logo-container {
-            a {
-              display: block;
-              padding: 13px 0;
-              //padding: 20px 0;
-            }
-            .light-logotype {
-              display: none;
-            }
-            .dark-logotype {
-              display: block;
-            }
-          }
-        }
-        .center-content {
+header.art-header-one-content .art-navigation-container {
+  left: -275px;
+}
+
+header.art-header-one-content .art-navigation-container .left-content .art--logo-container a {
+  display: block;
+  padding: 13px 0;
+}
+
+header.art-header-one-content .art-navigation-container .left-content .art--logo-container .light-logotype {
+  display: none;
+}
+
+header.art-header-one-content .art-navigation-container .left-content .art--logo-container .dark-logotype {
+  display: block;
+}
+
+header.art-header-one-content .art-navigation-container .center-content {
+  
+}
           nav {
             ul.menu {
               > li {
@@ -276,9 +274,9 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   box-shadow: none
 }
 
-.elementor-align-center {
+/*.elementor-align-center {
   text-align: center;
-}
+}*/
 
 .elementor-align-center .elementor-button {
   width: auto;
@@ -670,6 +668,11 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   transform: rotate(0deg);
 }
 
+/*
+.elementor-02121 .elementor-element.elementor-element-1521o03b .elementor-button {
+  text-align: center;
+}*/
+
 /*アイコン*/
 .elementor-icon {
   display: inline-block;
@@ -687,6 +690,15 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 @media (max-width: 767px) {
   header.art-header-one .art-header-one-content {
     padding: 0 22px;
+  }
+
+  header.art-navigation-container .left-content {
+    flex-grow: 2;
+  }
+
+  header.art-navigation-container .left-content .art--logo-container {
+    display: flex;
+    justify-content: 35px;
   }
 
   .elementor-column.elementor-col-50,.elementor-column[data-col="50"] {
