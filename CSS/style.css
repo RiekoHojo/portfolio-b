@@ -81,7 +81,7 @@ header.art-header-one-content .art-navigation-container .left-content .art--logo
 }
 
 header.art-header-one-content .art-navigation-container .center-content {
-  
+
 }
           nav {
             ul.menu {
@@ -173,6 +173,10 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   overflow-x: hidden;
   height: 100vh;
   border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.elementor-02121 .elementor-element .elementor-widget-container {
+  text-align: center;
 }
 
 /*メイン*/
@@ -308,7 +312,6 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
 .elementor-column.elementor-col-50,.elementor-column[data-col] {
   width: 50%;
 }
-
 
 /*sectionbox*/
 .elementor-02121 .elementor-element.elementor-element-0121a03 .elementor-spacer-inner {
@@ -561,6 +564,11 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
   height: 50px;
 }
 
+
+.elementor-02121 .elementor-element.elementor-element-1521o03b .elementor-button-wrapper {
+  text-align: center;
+}
+
 .elementor-02121 .elementor-element.elementor-element-1521o03b .elementor-button {
   font-size: 13px;
   font-weight: 500;
@@ -701,6 +709,10 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
     justify-content: 35px;
   }
 
+  .elementor-section .elementor-section-boxed > .elementor-container {
+    max-width: 764px;
+  }
+
   .elementor-column.elementor-col-50,.elementor-column[data-col="50"] {
     width: 50%;
   }
@@ -709,4 +721,169 @@ body.admin-bar .art-mobile-menu-wrapper .art-nav-container .art-mobile-menu-navi
     width: 100%;
   }
 
+/*section*/
+  .elementor-02121 .elementor-element.elementor-element-0121a03 .elementor-spacer-inner {
+    height:98px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0421d03 {
+      font-size: 11px;
+      line-height: 2.3em;
+      letter-spacing: 5.6px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0621f03b1 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0621f03b2 {
+      font-size: 18px;
+      letter-spacing: 4.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0621f03b4 {
+      font-size: 10px;
+      line-height: 2.7em;
+      letter-spacing: 2.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0621f03b6 .elementor-button {
+      font-size: 9px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0621f03b7 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0721g03 .elementor-spacer-inner {
+      height: 10px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b1 .elementor-spacer-inner {
+      height: 10px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b2 img {
+      width: 43%;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b3 .elementor-spacer-inner {
+      height: 20px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b4 {
+      font-size: 10px;
+      line-height: 3.2em;
+      letter-spacing: 2.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b5 .elementor-spacer-inner {
+      height: 30px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-0821h03b6 .elementor-button {
+      font-size: 9px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b1 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b2 {
+      font-size: 18px;
+      letter-spacing: 4.1px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b3 .elementor-spacer-inner {
+      height: 10px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b4 {
+      font-size: 10px;
+      line-height: 2.7em;
+      letter-spacing: 2.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b5 .elementor-spacer-inner {
+      height: 30px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b6 .elementor-button {
+      font-size: 9px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1021j03b7 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b1 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b2 {
+      font-size: 18px;
+      letter-spacing: 4.1px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b3 .elementor-spacer-inner {
+      height: 10px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b4 {
+      font-size: 10px;
+      line-height: 2.7em;
+      letter-spacing: 2.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b5 .elementor-spacer-inner {
+      height: 30px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b6 .elementor-button {
+      font-size: 9px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1221l03b7 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b1 .elementor-spacer-inner {
+      height: 40px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b2 {
+      text-align: center;
+      font-size: 11px;
+      line-height: 1.6em;
+      letter-spacing: 3.2px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b3 {
+      text-align: center;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b4 {
+      text-align: center;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b5 {
+      text-align: center;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1421n03b6 {
+      text-align: center;
+      letter-spacing: -0.1px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1521o03a .elementor-spacer-inner {
+      height: 20px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-1521o03b .elementor-button {
+      font-size: 9px;
+  }
+
+  .elementor-02121 .elementor-element.elementor-element-2121u03 .elementor-icon {
+      font-size: 41px;
+  }
 }
