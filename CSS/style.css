@@ -9,12 +9,25 @@
   padding: 0 50px;
   margin-bottom: 100px;
 }
+
+.is-header {
+  width: 100%;
+  height: 65px;
+}
 .art-nav {
   display: flex;
   justify-content: space-between;
 }
+
 .art-nav-item {
   margin: 0 20px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent; 
+  transition: border-color 0.3s;
+}
+
+.art-nav-item:hover {
+  border-bottom-color: #000;
 }
 
 .art-icon {
@@ -93,6 +106,7 @@
   background-color: #000;
   border-radius: 4px;
   margin: 0 auto;
+  display: block;
 }
 
 .footer {
@@ -103,7 +117,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  margin: 0 auto 30px;
+  margin: 0 auto 70px;
 }
 .map-img {
   display: block;
@@ -130,7 +144,7 @@
 }
 .footer-icon-text {
   font-size: 11px;
-  line-height: 30px;
+  line-height: 50px;
   margin-top: 20px;
 }
 
