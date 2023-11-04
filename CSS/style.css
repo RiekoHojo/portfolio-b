@@ -33,7 +33,6 @@
 .art-icon {
   width: 50px;
   height: 50px;
-  background-color: aqua;
 }
 
 .main-content {
@@ -148,7 +147,64 @@
   margin-top: 20px;
 }
 
+a,li,h1 {
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
+  .art-hamburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+  .art-hamburger-icon span {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 1.5px;
+    margin-top: 4px;
+    background-color: #000;
+    border-radius: 8px;
+    transition: ease 0.75s;
+  }
+  .art-hamburger-icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .art-hamburger-icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .art-hamburger-icon span:nth-of-type(3) {
+    bottom: 16px;
+  }
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 28px;
+  }
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .close span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+  }
+  .art-icon {
+    display: none;
+  }
+  .pc-nav {
+    display: none;
+  }
+  .sp-nav {
+    width: 70%;
+    position: absolute;
+    z-index: 10;
+  }
+  .sp-nav .li {
+    flex-direction: column;
+  }
+
   .content,
   .map-area {
     flex-wrap: wrap;
@@ -162,4 +218,26 @@
   .map-text-box {
     width: 100%;
   }
+}
+
+/*アニメーション*/
+.start {
+	background: #FFF;
+	position: fixed;
+  margin: auto;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+  margin: auto;
+	left: 55%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
 }
