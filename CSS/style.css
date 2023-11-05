@@ -197,6 +197,9 @@ a,li,h1 {
     display: none;
   }
   .sp-nav {
+    top: 60px;
+    left: 0px;
+    background-color: #FFF;
     width: 70%;
     position: absolute;
     z-index: 10;
@@ -234,10 +237,9 @@ a,li,h1 {
 .start p {
 	position: fixed;
   margin: auto;
-	left: 55%;
+	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	display: none;
 	z-index: 9999;
-	width: 280px;
 }

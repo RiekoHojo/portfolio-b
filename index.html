@@ -12,7 +12,8 @@
     <!--css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
     <link href="CSS/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/style.css"/>
+    <link href="JS/main.js" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         .art-header {
             background: #fff;
@@ -51,16 +52,18 @@
             <span></span>
             <span></span>
           </div>
-          <nav class="sp-nav">
+        </div>
+        <nav class="sp-nav">
+          <ul class="sp-art-nav">
             <li class="art-nav-item">MENU</li>
             <li class="art-nav-item">BIO STEAM</li>
             <li class="art-nav-item">HEAD SPA</li>
             <li class="art-nav-item">ACCESS</li>
             <li class="art-nav-item">CONTACT</li>
             <li class="art-nav-item">LOCATION</li>
-          </nav>
-        </div>
-      </header>
+          </ul>
+        </nav>
+    </header>
 
       <main class="main-content">
         <img class="main-img" src="images/top01.png">
@@ -238,39 +241,6 @@
     <div class="start">
       <p><img src="images/logo.png" alt=""></p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-	      setTimeout(function(){
-		      $('.start p').fadeIn(1600);
-	      },500); 
-	      setTimeout(function(){
-		      $('.start').fadeOut(500);
-	      },2500); 
-      });
-
-      $(function() {
-        $('.art-header').css({top: '-50px'}).fadeIn(500).animate({
-          top: "0px"
-        }, 1000, 'swing');
-      });
-
-      $('.art-hamburger').on('click', function(){
-        $('.art-hamburger-icon').toggleClass('close');
-        $('.sp-nav').slideToggle();
-      });
-    </script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ヘッダーメニュー</title>
-      <link rel="stylesheet" href="header.css">
-  </head>
-  <body>
