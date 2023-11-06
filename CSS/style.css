@@ -151,6 +151,10 @@ a,li,h1 {
   cursor: pointer;
 }
 
+.sp-nav {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .art-hamburger {
     background-color: transparent;
@@ -159,12 +163,13 @@ a,li,h1 {
     margin: 0 0 0 auto;
     height: 60px;
     width: 60px;
+    margin-left: -270px;
   }
   .art-hamburger-icon span {
     position: absolute;
     left: 15px;
     width: 30px;
-    height: 1.5px;
+    height: 2px;
     margin-top: 4px;
     background-color: #000;
     border-radius: 8px;
@@ -197,15 +202,21 @@ a,li,h1 {
     display: none;
   }
   .sp-nav {
-    top: 60px;
-    left: 0px;
+    top: 0px;
     background-color: #FFF;
-    width: 70%;
-    position: absolute;
+    width: 270px;
+    height: 100%;
+    position: fixed;
     z-index: 10;
+  }
+  .menu-active.sp-nav {
+    right: 0;
   }
   .sp-nav .li {
     flex-direction: column;
+  }
+  .menu-active.main-content {
+    margin-left: -270px;
   }
 
   .content,

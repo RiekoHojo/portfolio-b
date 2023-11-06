@@ -1,5 +1,6 @@
 console.log("test")
 
+/*トップロゴアニメーション*/
 $(function() {
   setTimeout(function(){
     $('.start p').fadeIn(1600);
@@ -9,15 +10,15 @@ $(function() {
   },2500); 
 });
 
-/*アニメーション違うから修正する*/
+/*ヘッダー上からアニメーション*/
 $(function() {
   $('.art-header').css({top: '-50px'}).fadeIn(500).animate({
     top: "0px"
   }, 1000, 'swing');
 });
 
-$('.art-hamburger').on('click', function(){
+/*ハンバーガーメニューアニメーション*/
+$('.art-hamburger').on('click',function(){
   $('.art-hamburger-icon').toggleClass('close');
-  $('.sp-nav').slideToggle();
+  $('.sp-nav').animate();
 });
-
