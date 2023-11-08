@@ -17,8 +17,25 @@ $(function() {
   }, 1000, 'swing');
 });
 
-/*ハンバーガーメニューアニメーション*/
+/*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
 $('.art-hamburger').on('click',function(){
-  $('.art-hamburger-icon').toggleClass('close');
-  $('.sp-nav').animate();
+  if($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $('.main-content').removeClass('open');
+    $('.sp-nav').removeClass('open');
+    $('.sp-nav-background').removeClass('open');
+  } else {
+    $('this').addClass('active');
+    $('.main-content').addClass('open');
+    $('.sp-nav').addClass('open');
+    $('.sp-nav-background').addClass('open');
+  }
+});
+$('.sp-nav-background').on('click',function(){
+  if($(this).hasClass('open')){
+    $(this).removeClass('open');
+    $('art-hamburger').removeClass('active');
+    $('main-content').removeClass('open');
+    $('sp-nav').removeClass('open');
+  }
 });
