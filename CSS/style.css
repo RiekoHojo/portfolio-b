@@ -156,13 +156,28 @@ a,li,h1 {
 }
 
 @media (max-width: 767px) {
+  .art-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .art-header.active {
+    transform: translateX(-250px);
+  }
+  .art-title {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
   .art-hamburger {
     background-color: transparent;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     margin: 0 0 0 auto;
     height: 60px;
     width: 60px;
+    right: 10px;
     transform: translateX(0);
   }
   .art-hamburger-icon span {
@@ -206,7 +221,7 @@ a,li,h1 {
   }
   .sp-nav {
     top: 0px;
-    background-color: #FFF;
+    background-color: #009;
     width: 270px;
     height: 100%;
     padding-top: 100px;
@@ -219,7 +234,8 @@ a,li,h1 {
   .sp-nav .li {
     /*flex-direction: column;*/
     text-align: left;
-    padding: 20px 0;
+    padding: 10px 0;
+    color: #000;
   }
   .menu-active.main-content {
     transform: translateX(-250px);
@@ -232,13 +248,13 @@ a,li,h1 {
     left: 0;
     width: 0;
     height: 0;
-    background-color: white;
+    background-color: #677;
     z-index: 2;
     opacity: 0;
     transition: opacity 1s; 
   }
   .sp-nav-background.open {
-    width: 100%;
+    width: 270px;
     height: 100%;
     opacity: 1;
   }
@@ -257,6 +273,7 @@ a,li,h1 {
   .content,
   .map-area {
     flex-wrap: wrap;
+    text-align: center;
   }
   .content-img,
   .map-img {
