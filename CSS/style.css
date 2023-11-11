@@ -151,15 +151,16 @@ a,li,h1 {
   cursor: pointer;
 }
 
-.sp-nav {
+/*sp-nav {
   display: none;
-}
+}*/
 
 @media (max-width: 767px) {
   .art-header {
     display: flex;
     justify-content: center;
     position: relative;
+    max-height: 82px;
   }
   .art-header.active {
     transform: translateX(-250px);
@@ -213,63 +214,50 @@ a,li,h1 {
     transform: rotate(-45deg);
     top: 28px;
   }
-  .art-icon {
-    display: none;
+
+/*ナビゲーションスライド*/
+  main {
+    height: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .pc-nav {
-    display: none;
+  .open {
+    transform: translateX(-250px);
   }
-  .sp-nav {
-    top: 0px;
-    background-color: #009;
-    width: 270px;
+  nav {
+    width: 250px;
     height: 100%;
     padding-top: 100px;
     position: fixed;
-    z-index: 10;
+    top: 0;
     right: 0;
-    transform: translateX(250px); 
+    z-index: 10;
+    transform: translate(250px);
     transition: all .5s;
   }
-  .sp-nav .li {
-    /*flex-direction: column;*/
-    text-align: left;
-    padding: 10px 0;
-    color: #000;
-  }
-  .menu-active.main-content {
-    transform: translateX(-250px);
-  }
-  .sp-nav-background {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    background-color: #677;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 1s; 
-  }
-  .sp-nav-background.open {
-    width: 270px;
-    height: 100%;
-    opacity: 1;
-  }
-  .sp-nav.open {
+  nav.open {
     transform: translateZ(0);
   }
-  .main-content {
-    height: 100%;
-    padding: 0 5px;
-    transition: all .5s;
+  nav li {
+    color: #000;
+    text-align: left;
+    padding: 10px 0;
   }
-  .main-content.open {
+  /*ヘッダーも一緒に移動したいけど...*/
+  .art-header.open {
     transform: translateX(-250px);
   }
-  
+  .art-icon {
+    display: none;
+  }
+  .art-nav-item:hover {
+    border-bottom-color: #fff;
+  }
+
   .content,
   .map-area {
     flex-wrap: wrap;

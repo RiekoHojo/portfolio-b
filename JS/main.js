@@ -18,24 +18,30 @@ $(function() {
 });
 
 /*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
-$('.art-hamburger').on('click',function(){
+/*$('.art-hamburger').on('click',function(){
   if($(this).hasClass('active')) {
+  }
+});*/
+
+$('.art-hamburger').on('click',function(){
+  if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('.main-content').removeClass('open');
-    $('.sp-nav').removeClass('open');
-    $('.sp-nav-background').removeClass('open');
+    $('main').removeClass('open');
+    $('art-header').removeClass('open');/*ヘッダーも動かしたい。。。*/ 
+    $('nav').removeClass('open');
   } else {
-    $('this').addClass('active');
-    $('.main-content').addClass('open');
-    $('.sp-nav').addClass('open');
-    $('.sp-nav-background').addClass('open');
+    $(this).addClass('active');
+    $('main').addClass('open');
+    $('art-header').addClass('open');
+    $('nav').addClass('open');
   }
 });
-$('.sp-nav-background').on('click',function(){
+$('.overlay').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
-    $('art-hamburger').removeClass('active');
-    $('main-content').removeClass('open');
-    $('sp-nav').removeClass('open');
+    $('.art-hamburger').removeClass('active');
+    $('main').removeClass('open');
+    $('art-header').removeClass('open');
+    $('nav').removeClass('open');
   }
 });
