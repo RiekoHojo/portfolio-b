@@ -18,30 +18,46 @@ $(function() {
 });
 
 /*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
-/*$('.art-hamburger').on('click',function(){
-  if($(this).hasClass('active')) {
-  }
-});*/
 
 $('.art-hamburger').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
     $('main').removeClass('open');
-    $('art-header').removeClass('open');/*ヘッダーも動かしたい。。。*/ 
+    $('.art-header').removeClass('open');
     $('nav').removeClass('open');
   } else {
     $(this).addClass('active');
     $('main').addClass('open');
-    $('art-header').addClass('open');
+    $('.art-header').addClass('open');
+    $('art-hamburger').removeClass('open');
     $('nav').addClass('open');
   }
 });
-$('.overlay').on('click',function(){
+$('.art-hamburger').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.art-hamburger').removeClass('active');
     $('main').removeClass('open');
-    $('art-header').removeClass('open');
+    $('.art-header').removeClass('open');
     $('nav').removeClass('open');
   }
+});
+
+/*ふぁっと出現アニメーション*/
+
+function BlurTextAnimeControl() {
+  $('.content-text').each(function(){ 
+    var elemPos = $(this).offset().top-50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).addClass('blur');
+    }
+  });
+}
+$(window).scroll(function () {
+  BlurTextAnimeControl();
+});
+$(window).on('load', function () {
+  BlurTextAnimeControl();
 });

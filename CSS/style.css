@@ -161,6 +161,7 @@ a,li,h1 {
     justify-content: center;
     position: relative;
     max-height: 82px;
+    transition: all .5s;
   }
   .art-header.active {
     transform: translateX(-250px);
@@ -214,8 +215,6 @@ a,li,h1 {
     transform: rotate(-45deg);
     top: 28px;
   }
-
-/*ナビゲーションスライド*/
   main {
     height: 100%;
     min-height: 100vh;
@@ -231,13 +230,14 @@ a,li,h1 {
   nav {
     width: 250px;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 15px 10px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 10;
     transform: translate(250px);
     transition: all .5s;
+    background-color: aqua;
   }
   nav.open {
     transform: translateZ(0);
@@ -245,14 +245,15 @@ a,li,h1 {
   nav li {
     color: #000;
     text-align: left;
-    padding: 10px 0;
-  }
-  /*ヘッダーも一緒に移動したいけど...*/
-  .art-header.open {
-    transform: translateX(-250px);
+    padding: 30px 0;
+    font-size: 13px;
   }
   .art-icon {
     display: none;
+  }
+  .art-nav {
+    display: block;
+    padding: 30px;
   }
   .art-nav-item:hover {
     border-bottom-color: #fff;
@@ -293,4 +294,25 @@ a,li,h1 {
 	transform: translate(-50%, -50%);
 	display: none;
 	z-index: 9999;
+}
+
+.blur{
+  animation-name:blurAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+@keyframes blurAnime{
+  from {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0;
+  }
+  to {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  }
+}
+.lcontent-text{
+    opacity: 0;
 }
