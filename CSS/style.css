@@ -117,6 +117,7 @@
   align-items: center;
   max-width: 1000px;
   margin: 0 auto 70px;
+  padding: 10px;
 }
 .map-img {
   display: block;
@@ -237,7 +238,7 @@ a,li,h1 {
     z-index: 10;
     transform: translate(250px);
     transition: all .5s;
-    background-color: aqua;
+    background-color: #fff;
   }
   nav.open {
     transform: translateZ(0);
@@ -259,6 +260,18 @@ a,li,h1 {
     border-bottom-color: #fff;
   }
 
+  .content-box,
+  .map-area,
+  .map-text-box,
+  .lead-box {
+    opacity: 0;
+  }
+
+  .content-img {
+    padding: 0 3px;
+    align-items: center;
+  }
+
   .content,
   .map-area {
     flex-wrap: wrap;
@@ -272,6 +285,7 @@ a,li,h1 {
   .content-box,
   .map-text-box {
     width: 100%;
+    opacity: 0;
   }
 }
 
@@ -298,7 +312,7 @@ a,li,h1 {
 
 .blur{
   animation-name:blurAnime;
-  animation-duration:1s;
+  animation-duration:1.5s;
   animation-fill-mode:forwards;
 }
 @keyframes blurAnime{

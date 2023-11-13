@@ -28,7 +28,6 @@ $('.art-hamburger').on('click',function(){
   } else {
     $(this).addClass('active');
     $('main').addClass('open');
-    $('.art-header').addClass('open');
     $('art-hamburger').removeClass('open');
     $('nav').addClass('open');
   }
@@ -46,14 +45,17 @@ $('.art-hamburger').on('click',function(){
 /*ふぁっと出現アニメーション*/
 
 function BlurTextAnimeControl() {
-  $('.content-text').each(function(){ 
-    var elemPos = $(this).offset().top-50;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-    $(this).addClass('blur');
-    }
-  });
+	$('.content-box,.map-area,.map-text-box,.lead-box').each(function(){ 
+		var elemPos = $(this).offset().top-50;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+    var offset = windowHeight / 2; 
+		if (scroll >= elemPos - offset){
+		$(this).addClass('blur');
+		}else{
+		$(this).removeClass('blur');
+		}
+		});
 }
 $(window).scroll(function () {
   BlurTextAnimeControl();
