@@ -63,3 +63,24 @@ $(window).scroll(function () {
 $(window).on('load', function () {
   BlurTextAnimeControl();
 });
+
+/*リザーブ*/
+
+$(function(){
+  var $btn = $('.box-container');
+  var isHidden = true;
+  $btn.hide();
+    $(window).scroll(function () {
+    if( $(this).scrollTop() > 5700 ) {
+      if( isHidden ) {
+        $btn.stop(true,true).fadeIn(200);
+        isHidden = false;
+      }
+    } else {   
+      if( !isHidden ) {
+        $btn.stop(true,true).fadeOut();
+        isHidden = true;
+      }
+    }
+  });
+});

@@ -152,6 +152,30 @@ a,li,h1 {
   cursor: pointer;
 }
 
+.box-container {
+  position: fixed;
+  padding: 30px;
+  bottom: 0;
+  background-color: rgb(221, 221, 221);
+  z-index: 1000;
+  right: 0;
+}
+.box-container .p {
+  color: #000;
+  transform: .3s ease-out;
+  letter-spacing: 0.02em;
+}
+.box-container-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 28px;
+  line-break: 20px;
+  opacity: .5;
+}
+
 /*sp-nav {
   display: none;
 }*/
