@@ -3,11 +3,11 @@ console.log("test")
 /*トップロゴアニメーション*/
 $(function() {
   setTimeout(function(){
-    $('.start p').fadeIn(1600);
-  },500); 
+    $('.start p').fadeIn(800);
+  },250); 
   setTimeout(function(){
     $('.start').fadeOut(500);
-  },2500); 
+  },2000); 
 });
 
 /*ヘッダー上からアニメーション*/
