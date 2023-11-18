@@ -17,17 +17,26 @@ $(function() {
   }, 1000, 'swing');
 });
 
-/*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
+/*ヘッダー高さアニメーション */
+$(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 10) {
+      $('art-header').addClass('small-header');
+    }
+  });
+});
 
-$('.art-hamburger').on('click',function(){
+/*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
+$('.art-hamburger-icon').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
     $('main').removeClass('open');
-    $('.art-header').removeClass('open');
+    $('art-header').removeClass('active');
     $('nav').removeClass('open');
   } else {
     $(this).addClass('active');
     $('main').addClass('open');
+    $('art-header').addClass('active');
     $('art-hamburger').removeClass('open');
     $('nav').addClass('open');
   }
@@ -35,15 +44,14 @@ $('.art-hamburger').on('click',function(){
 $('.art-hamburger').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
-    $('.art-hamburger').removeClass('active');
+    $('art-hamburger').removeClass('active');
     $('main').removeClass('open');
-    $('.art-header').removeClass('open');
+    $('art-header').removeClass('active');
     $('nav').removeClass('open');
   }
 });
 
 /*ふぁっと出現アニメーション*/
-
 function BlurTextAnimeControl() {
 	$('.content-box,.map-area,.map-text-box,.lead-box').each(function(){ 
 		var elemPos = $(this).offset().top-50;
@@ -52,10 +60,8 @@ function BlurTextAnimeControl() {
     var offset = windowHeight / 2; 
 		if (scroll >= elemPos - offset){
 		$(this).addClass('blur');
-		}else{
-		$(this).removeClass('blur');
-		}
-		});
+    }
+	});
 }
 $(window).scroll(function () {
   BlurTextAnimeControl();
@@ -65,22 +71,17 @@ $(window).on('load', function () {
 });
 
 /*リザーブ*/
-
 $(function(){
   var $btn = $('.box-container');
-  var isHidden = true;
   $btn.hide();
-    $(window).scroll(function () {
-    if( $(this).scrollTop() > 5700 ) {
-      if( isHidden ) {
-        $btn.stop(true,true).fadeIn(200);
-        isHidden = false;
-      }
-    } else {   
-      if( !isHidden ) {
-        $btn.stop(true,true).fadeOut();
-        isHidden = true;
-      }
+  $(window).scroll(function () {
+    if($(this).scrollTop() > 5700) {
+      $btn.fadeIn(200);
     }
   });
+  $('.box-container-icon-btn').click(function() {
+    $btn.fadeOut(200); 
+  });
 });
+
+//1240
