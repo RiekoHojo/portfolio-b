@@ -22,6 +22,8 @@ $(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 10) {
       $('.art-header').addClass('small-header');
+    } else {
+      $('.art-header').removeClass('small-header');
     }
   });
 });
@@ -51,6 +53,7 @@ $('.art-hamburger').on('click',function(){
   }
 });
 
+
 /*ふぁっと出現アニメーション*/
 function BlurTextAnimeControl() {
 	$('.content-box,.map-area,.map-text-box,.lead-box').each(function(){ 
@@ -71,35 +74,20 @@ $(window).on('load', function () {
 });
 
 /*リザーブ*/
-/*$(function(){
-  var $btn = $('.box-container');
-  $btn.hide();
-  $(window).scroll(function () {
-    if($(this).scrollTop() > 5700) {
-      $btn.fadeIn(200);
-    }
-  });
-  $('.box-container-icon-btn').click(function() {
-    $btn.fadeOut(400); 
-  });
-});*/
 $(function() {
   var $btn = $('.box-container');
   var $trigger = $('#box-container-trigger');
-
+  $btn.hide();
   function checkIfInView() {
-    var windowHeight = $(window).height(); // ウィンドウの高さ
-    var scrollPos = $(window).scrollTop(); // 現在のスクロール位置
-    var triggerPos = $trigger.offset().top; // トリガー要素の上部の位置
+    var windowHeight = $(window).height();
+    var scrollPos = $(window).scrollTop();
+    var triggerPos = $trigger.offset().top;
     if (scrollPos + windowHeight > triggerPos && scrollPos < triggerPos) {
       $btn.fadeIn(200);
     }
   }
-
-  $(window).scroll(checkIfInView);
-
-  $(window).on('load resize', checkIfInView);
-
+  $(window).on('scroll', checkIfInView);
+  
   $('.box-container-icon-btn').click(function() {
     $btn.fadeOut(400);
   });
