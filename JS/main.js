@@ -28,19 +28,33 @@ $(function() {
   });
 });
 
+/*ヘッダーラインアニメーション */
+$(function() {
+  var scrollTimer;
+  $(window).scroll(function() {
+    if (scrollTimer) {
+      clearTimeout(scrollTimer);
+    }
+    $('.art-header').css('outline', '1px solid rgba(59, 48, 48, 0.1)');
+    scrollTimer = setTimeout(function() {
+      $('.art-header').css('outline', 'none');
+    }, 300);
+  });
+});
+
 /*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
 $('.art-hamburger-icon').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
     $('main').removeClass('open');
     $('.art-header').removeClass('active');
-    $('nav').removeClass('open');
+    $('.art-nav-sp').removeClass('open');
   } else {
     $(this).addClass('active');
     $('main').addClass('open');
     $('.art-header').addClass('active');
     $('.art-hamburger').removeClass('open');
-    $('nav').addClass('open');
+    $('.art-nav-sp').addClass('open');
   }
 });
 $('.art-hamburger').on('click',function(){
@@ -49,7 +63,7 @@ $('.art-hamburger').on('click',function(){
     $('.art-hamburger').removeClass('active');
     $('main').removeClass('open');
     $('.art-header').removeClass('active');
-    $('nav').removeClass('open');
+    $('.art-nav-sp').removeClass('open');
   }
 });
 
@@ -77,18 +91,25 @@ $(window).on('load', function () {
 $(function() {
   var $btn = $('.box-container');
   var $trigger = $('#box-container-trigger');
+  var $footer = $('.footer-icon');
+  var btnClicked = false;
   $btn.hide();
   function checkIfInView() {
     var windowHeight = $(window).height();
     var scrollPos = $(window).scrollTop();
     var triggerPos = $trigger.offset().top;
-    if (scrollPos + windowHeight > triggerPos && scrollPos < triggerPos) {
+    var footerPos = $footer.offset().top;
+    if (scrollPos + windowHeight > triggerPos && scrollPos < footerPos && !btnClicked) {
       $btn.fadeIn(200);
+    } else {
+      $btn.fadeOut(200);
     }
   }
-  $(window).on('scroll', checkIfInView);
-  
+  $(window).on('scroll resize', checkIfInView);
   $('.box-container-icon-btn').click(function() {
     $btn.fadeOut(400);
+    btnClicked = true;
   });
 });
+
+
