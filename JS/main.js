@@ -70,7 +70,7 @@ $('.art-hamburger').on('click',function(){
 
 /*ふぁっと出現アニメーション*/
 function BlurTextAnimeControl() {
-	$('.content-box,.map-area,.map-text-box,.lead-box').each(function(){ 
+	$('.content-box,.map-area,.map-text-box,.map-btn,.lead-box,.footer-icon').each(function(){ 
 		var elemPos = $(this).offset().top-50;
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
@@ -86,6 +86,7 @@ $(window).scroll(function () {
 $(window).on('load', function () {
   BlurTextAnimeControl();
 });
+
 
 /*リザーブ*/
 $(function() {
