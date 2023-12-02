@@ -43,29 +43,33 @@ $(function() {
 });
 
 /*ハンバーガーメニュー・sp-nav 右から出てくるアニメーション*/
-$('.art-hamburger-icon').on('click',function(){
+$('.art-hamburger-icon').on('click', function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
     $('main').removeClass('open');
     $('.art-header').removeClass('active');
     $('.art-nav-sp').removeClass('open');
+    $('body').removeClass('no-scroll'); 
   } else {
     $(this).addClass('active');
     $('main').addClass('open');
     $('.art-header').addClass('active');
-    $('.art-hamburger').removeClass('open');
     $('.art-nav-sp').addClass('open');
+    $('body').addClass('no-scroll');
   }
 });
-$('.art-hamburger').on('click',function(){
+
+$('.art-hamburger').on('click', function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.art-hamburger').removeClass('active');
     $('main').removeClass('open');
     $('.art-header').removeClass('active');
     $('.art-nav-sp').removeClass('open');
+    $('body').removeClass('no-scroll');
   }
 });
+
 
 
 /*ふぁっと出現アニメーション*/
